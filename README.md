@@ -2,6 +2,8 @@
 
 ## Учебное задание на Python, Fast API
 
+Автор: Арсений Гаинцев (https://github.com/arseniy77, https://vk.com/arsnet)
+
 
 
 Приложение для Благотворительного фонда поддержки котиков **QRKot**.
@@ -27,3 +29,7 @@
 
 По запросу к эндпоинту http://127.0.0.1:8000/google/ создаётся гугл-таблица со списком закрытых проектов.
 Данные гугл-аккаунта необходимо заполнить в файле .env
+
+
+## License
+You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications to or software including (via compiler) GPL-licensed code must also be made available under the GPL along with build & install instructions.

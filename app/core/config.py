@@ -5,7 +5,7 @@ from pydantic import BaseSettings, EmailStr
 
 class Settings(BaseSettings):
     app_title: str = 'Кошачьи инвестиции'
-    database_url: str = 'sqlite+aiosqlite:///./database.db'
+    database_url: str = 'sqlite+aiosqlite:///./test_project.db'
     secret: str = 'secret'
     first_superuser_email: Optional[EmailStr] = None
     first_superuser_password: Optional[str] = None

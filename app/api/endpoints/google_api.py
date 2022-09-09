@@ -13,6 +13,8 @@ from app.services.google_api import (set_user_permissions, spreadsheets_create,
 
 router = APIRouter()
 
+SPREADSHEETS_BASEURL = 'https://docs.google.com/spreadsheets/d/'
+
 
 @router.get(
     '/',
@@ -33,7 +35,7 @@ async def get_spreadsheet(
                                     reservations,
                                     wrapper_services)
     spreadsheet_url = (
-        'https://docs.google.com/spreadsheets/d/' + spreadsheetid
+        SPREADSHEETS_BASEURL + spreadsheetid
     )
     return [
         {'spreadsheet_url': spreadsheet_url}
